@@ -98,11 +98,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CountFactors.cpp" />
+    <ClCompile Include="Factors.cpp" />
     <ClCompile Include="Numbers_Main.cpp" />
+    <ClCompile Include="Primes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CountFactors.h" />
+    <ClInclude Include="Factors.h" />
+    <ClInclude Include="Primes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

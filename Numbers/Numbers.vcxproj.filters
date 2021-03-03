@@ -15,15 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CountFactors.cpp">
+    <ClCompile Include="Numbers_Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Numbers_Main.cpp">
+    <ClCompile Include="Factors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Primes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CountFactors.h">
+    <ClInclude Include="Factors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,5 @@
 #include <set>
 
-#include "CountFactors.h"
-
 int CountFactors(int n)
 {
     int lower = 1;
