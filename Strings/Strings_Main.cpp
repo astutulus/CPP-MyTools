@@ -3,7 +3,7 @@
 #include <fstream>	// std::ifstream
 #include <iostream>
 
-#include "RWSplit.h"
+#include "Tokenise.h"
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 
 	while (getline(MyReadFile, myLine))
 	{
-		std::vector<std::string> this_row = RWSplit(myLine);
+		std::vector<std::string> this_row = Tokenise(myLine);
 
 		// Demonstrating words are complete, and not padded with spaces:-
 		for (std::string goat : this_row)
@@ -20,6 +20,14 @@ int main()
 			std::cout << "_" << goat << "_\n";
 		}
 		std::cout << "--------------" << std::endl;
+	}
+
+	std::cout << "================================" << std::endl;
+
+	std::vector<int> numerals = TokeniseIntegers("123 45 6 7 89");
+	for (int i : numerals)
+	{
+		std::cout << "..." << i << "...\n";
 	}
 	std::cin.get();
 }
