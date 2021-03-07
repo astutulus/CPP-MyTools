@@ -2,18 +2,16 @@
 
 bool isPrime(int number)
 {
-	if (number < 2) return false;
+	if (number <= 1) return false;
 	else if (number == 2) return true;
 	else if (number % 2 == 0) return false;
 	else
 	{
 		int divisor = 3;
-		int divided = number / divisor;
-		while (divisor < divided)
+		while (divisor < number / divisor)
 		{
 			if (number % divisor == 0) return false;
 			divisor += 2;
-			divided = number / divisor;
 		}
 		return true;
 	}
@@ -21,18 +19,16 @@ bool isPrime(int number)
 
 bool isPrime(long long number)
 {
-	if (number < 2) return false;
+	if (number <= 1) return false;
 	else if (number == 2) return true;
 	else if (number % 2 == 0) return false;
 	else
 	{
 		long long divisor = 3;
-		long long divided = number / divisor;
-		while (divisor < divided)
+		while (divisor < number / divisor)
 		{
 			if (number % divisor == 0) return false;
 			divisor += 2;
-			divided = number / divisor;
 		}
 		return true;
 	}
