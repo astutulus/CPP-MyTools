@@ -22,6 +22,7 @@ int main()
     std::cout << "Is prime 7 = " << (isPrime(7) ? "T" : "F") << std::endl;
     std::cout << "Is prime 47 = " << (isPrime(47) ? "T" : "F") << std::endl;
     std::cout << "Is prime 48 = " << (isPrime(48) ? "T" : "F") << std::endl;
+    std::cout << "Is prime 600851475143  = " << (isPrime(600851475143) ? "T" : "F") << std::endl; // [It is not prime]
 
     std::cin.get();
 }
