@@ -1,7 +1,8 @@
 #include <string>
 #include <algorithm> // reverse
+#include "Palindrome.h"
 
-bool IsPalimByIndex(int n)
+bool IsPalinByIndex(int n)
 {
 	std::string Letters = std::to_string(n);
 	size_t Len = Letters.size();
@@ -16,7 +17,7 @@ bool IsPalimByIndex(int n)
 	return true;
 }
 
-bool IsPalimByClassReverse(int n)
+bool IsPalinByBif(int n)
 {
 	std::string Letters = std::to_string(n);
 

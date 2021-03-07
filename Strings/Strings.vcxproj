@@ -103,6 +103,7 @@
     <ClCompile Include="Strings_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Palindrome.h" />
     <ClInclude Include="Tokenise.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

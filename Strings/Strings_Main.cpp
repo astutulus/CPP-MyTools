@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "Tokenise.h"
+#include "Palindrome.h"
 
 int main()
 {
@@ -29,5 +30,18 @@ int main()
 	{
 		std::cout << "..." << i << "...\n";
 	}
+
+	std::cout << "================================" << std::endl;
+
+	std::vector<int> queries = { 0, 1, 22, 334, 747, 8999, 123321 };
+	for (int q : queries)
+	{
+		std::cout << "Is " << q << " palindromic?  " << (IsPalinByBif(q) ? "yes \n" : "no \n");
+	}
+
+	std::cout << "================================" << std::endl;
+
 	std::cin.get();
 }
+
+
