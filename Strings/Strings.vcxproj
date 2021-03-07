@@ -98,6 +98,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="Tokenise.cpp" />
     <ClCompile Include="Strings_Main.cpp" />
   </ItemGroup>
