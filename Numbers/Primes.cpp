@@ -1,35 +1,30 @@
 #include "Primes.h"
 
-bool isPrime(int number)
+bool IsPrime(int Number)
 {
-	if (number <= 1) return false;
-	else if (number == 2) return true;
-	else if (number % 2 == 0) return false;
-	else
+	if (Number <= 1) return false;
+	if (Number == 2) return true;
+	if (Number % 2 == 0) return false;
+
+	for (int Div = 3; Div <= Number / Div; Div += 2)
 	{
-		int divisor = 3;
-		while (divisor < number / divisor)
-		{
-			if (number % divisor == 0) return false;
-			divisor += 2;
-		}
-		return true;
+		if (Number % Div == 0) return false;
 	}
+	return true;
 }
 
-bool isPrime(long long number)
+
+bool IsPrime(long long Number)
 {
-	if (number <= 1) return false;
-	else if (number == 2) return true;
-	else if (number % 2 == 0) return false;
-	else
+	if (Number <= 1) return false;
+	if (Number == 2) return true;
+	if (Number % 2 == 0) return false;
+
+	for (long long Div = 3; Div <= Number / Div; Div += 2)
 	{
-		long long divisor = 3;
-		while (divisor < number / divisor)
-		{
-			if (number % divisor == 0) return false;
-			divisor += 2;
-		}
-		return true;
+		if (Number % Div == 0) return false;
 	}
+	return true;
 }
+
+

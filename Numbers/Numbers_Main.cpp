@@ -19,10 +19,10 @@ int main()
     // Primes
     for (int test : std::vector<int>{ 1,2,3,6,7,47,48 })
     {
-        std::cout << test << " is " << (isPrime(test) ? Pr : NPr) << std::endl;
+        std::cout << test << " is " << (IsPrime(test) ? Pr : NPr) << std::endl;
     }
 
-    std::cout << "600851475143 is " << (isPrime(600851475143) ? Pr : NPr) << std::endl; // [It is not prime]
+    std::cout << "600851475143 is " << (IsPrime(600851475143) ? Pr : NPr) << std::endl; // [It is not prime]
 
     std::cin.get();
 }

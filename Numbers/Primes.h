@@ -1,5 +1,5 @@
 #pragma once
 
-bool isPrime(int number);
+bool IsPrime(int number);
 
-bool isPrime(long long number);
+bool IsPrime(long long number);
