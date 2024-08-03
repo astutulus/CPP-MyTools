@@ -36,7 +36,7 @@ int main()
 	std::vector<int> queries = { 0, 1, 22, 334, 747, 8999, 123321 };
 	for (int q : queries)
 	{
-		std::cout << "Is " << q << " palindromic?  " << (IsPalinByBif(q) ? "yes \n" : "no \n");
+		std::cout << "Is " << q << " palindromic?  " << (IsPalindrome(q) ? "yes \n" : "no \n");
 	}
 
 	std::cout << "================================" << std::endl;

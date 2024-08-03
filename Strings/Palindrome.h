@@ -1,5 +1,7 @@
 #pragma once
 
-bool IsPalinByIndex(int n);
+#include <string>
 
-bool IsPalinByBif(int n);
+bool IsPalindrome(std::string str);
+
+bool IsPalindrome(int n);

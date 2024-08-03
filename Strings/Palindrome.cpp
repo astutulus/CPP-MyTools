@@ -2,12 +2,14 @@
 #include <algorithm> // reverse
 #include "Palindrome.h"
 
-bool IsPalinByIndex(int n)
+//
+// Helper (not listed in header file)
+//
+bool IsPalinByIndex(std::string Letters)
 {
-	std::string Letters = std::to_string(n);
 	size_t Len = Letters.size();
 
-	for (int i = 0; i < Len / 2; i++)
+	for (unsigned int i = 0; i < Len / 2; i++)
 	{
 		if (Letters[i] != Letters[Len - 1 - i])
 		{
@@ -17,12 +19,40 @@ bool IsPalinByIndex(int n)
 	return true;
 }
 
-bool IsPalinByBif(int n)
+//
+// Helper (not listed in header file)
+//
+bool IsPalinByReverseBIF(std::string text)
 {
-	std::string Letters = std::to_string(n);
-
-	std::string Reverse = Letters;
+	std::string Reverse = text;
 	std::reverse(Reverse.begin(), Reverse.end());
 
-	return Letters == Reverse;
+	return text == Reverse;
+}
+
+bool is_palindrome_with_begin(std::string text)
+{
+	return equal(
+		text.begin(),
+		text.begin() + text.size() / 2,
+		text.rbegin());
+}
+
+// 
+// Overloaded constructor: String version seen in header file
+//
+bool IsPalindrome(std::string str)
+{
+	// return IsPalinByIndex(str);
+	// return IsPalinByReverseBIF(str);
+	return is_palindrome_with_begin(str);
+}
+
+// 
+// Overloaded constructor: Integer version seen in header file
+//
+bool IsPalindrome(int n)
+{
+	std::string Letters = std::to_string(n);
+	return IsPalindrome(Letters);
 }
