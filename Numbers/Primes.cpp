@@ -6,9 +6,9 @@ bool IsPrime(int Number)
 	if (Number == 2) return true;
 	if (Number % 2 == 0) return false;
 
-	for (int Div = 3; Div <= Number / Div; Div += 2)
+	for (int div = 3; div <= Number / div; div += 2)
 	{
-		if (Number % Div == 0) return false;
+		if (Number % div == 0) return false;
 	}
 	return true;
 }
